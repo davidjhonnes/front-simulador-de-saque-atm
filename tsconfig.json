@@ -1,0 +1,16 @@
+{
+  "files": [
+    "src/*"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/**/*.test*",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
+  }
+}
