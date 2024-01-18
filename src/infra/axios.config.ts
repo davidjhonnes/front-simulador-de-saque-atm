@@ -15,6 +15,8 @@ export async function configToken() {
   instance.defaults.headers.post.Authorization = `Bearer ${token}`;
 }
 
+configToken();
+
 export const apiError = (e) => {
   if (e.response) {
     const { status } = e.response;
@@ -23,7 +25,5 @@ export const apiError = (e) => {
     }
   }
 };
-
-configToken();
 
 export default instance;
